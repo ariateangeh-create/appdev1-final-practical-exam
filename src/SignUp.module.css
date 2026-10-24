@@ -11,7 +11,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 48px;
+  padding: 40px 48px;
 }
 
 .title {
@@ -83,6 +83,71 @@
   font-size: 15px;
   font-weight: 600;
   cursor: pointer;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  max-width: 420px;
+  margin: 24px 0;
+}
+
+.divider > span:first-child,
+.divider > span:last-child {
+  height: 1px;
+  flex: 1;
+  background: #d1d5db;
+}
+
+.orText {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.socialButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+  max-width: 420px;
+}
+
+.socialButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  min-height: 48px;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #111111;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.socialButton img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.bottomText {
+  margin: 24px 0 0;
+  text-align: center;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.bottomText a {
+  color: #111111;
+  font-weight: 600;
+  text-decoration: underline;
 }
 
 .rightSection {

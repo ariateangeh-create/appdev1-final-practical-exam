@@ -1,6 +1,8 @@
 
 import styles from './SignUp.module.css'
 import blossomFlower from './assets/blossom-flower.svg'
+import googleLogo from './assets/icons-google-logo.svg'
+import appleLogo from './assets/icons-apple-logo.svg'
 
 function SignUp() {
   return (
@@ -8,7 +10,7 @@ function SignUp() {
       <section className={styles.leftSection}>
         <h1 className={styles.title}>Get Started Now</h1>
 
-        <form className={styles.form}>
+        <form className={styles.form} onSubmit={(event) => event.preventDefault()}>
           <div className={styles.field}>
             <label htmlFor="name">Name</label>
             <input
@@ -45,6 +47,28 @@ function SignUp() {
             Signup
           </button>
         </form>
+
+        <div className={styles.divider}>
+          <span></span>
+          <span className={styles.orText}>Or</span>
+          <span></span>
+        </div>
+
+        <div className={styles.socialButtons}>
+          <button className={styles.socialButton} type="button">
+            <img src={googleLogo} alt="" />
+            <span>Sign in with Google</span>
+          </button>
+
+          <button className={styles.socialButton} type="button">
+            <img src={appleLogo} alt="" />
+            <span>Sign in with Apple</span>
+          </button>
+        </div>
+
+        <p className={styles.bottomText}>
+          Have an account? <a href="#">Sign In</a>
+        </p>
       </section>
 
       <section className={styles.rightSection}>
