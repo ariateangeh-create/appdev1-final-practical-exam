@@ -9,22 +9,80 @@
 .leftSection {
   min-width: 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  padding: 80px 48px;
-}
-
-.formContainer {
-  width: 100%;
-  max-width: 440px;
+  padding: 48px;
 }
 
 .title {
-  margin: 0 0 24px;
-  color: #000000;
+  margin: 0 0 28px;
   font-size: 32px;
   font-weight: 700;
   line-height: 1.2;
+  color: #000000;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 420px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.field label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #111827;
+}
+
+.field input {
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: #ffffff;
+  font: inherit;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.field input:focus {
+  outline: 2px solid #111827;
+  outline-offset: 1px;
+}
+
+.agreement {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #111827;
+}
+
+.agreement input {
+  width: 16px;
+  height: 16px;
+  accent-color: #111827;
+}
+
+.signupButton {
+  width: 100%;
+  min-height: 48px;
+  border: none;
+  border-radius: 8px;
+  background: #111111;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 .rightSection {
@@ -49,7 +107,7 @@
   }
 
   .leftSection {
-    padding: 48px 24px;
+    padding: 32px 24px;
   }
 
   .rightSection {
