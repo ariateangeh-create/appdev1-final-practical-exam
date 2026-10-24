@@ -1,12 +1,8 @@
 
-import './App.css'
+import SignUp from './SignUp'
 
 function App() {
-  return (
-    <main className="app">
-      <h1>APPDEV1 Final Project</h1>
-    </main>
-  )
+  return <SignUp />
 }
 
 export default App
