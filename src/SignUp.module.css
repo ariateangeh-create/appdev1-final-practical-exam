@@ -8,6 +8,23 @@
 
 .leftSection {
   min-width: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 80px 48px;
+}
+
+.formContainer {
+  width: 100%;
+  max-width: 440px;
+}
+
+.title {
+  margin: 0 0 24px;
+  color: #000000;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
 }
 
 .rightSection {
@@ -31,8 +48,13 @@
     grid-template-columns: 1fr;
   }
 
+  .leftSection {
+    padding: 48px 24px;
+  }
+
   .rightSection {
     min-height: 50vh;
+    padding: 24px;
   }
 
   .flower {
